@@ -2,8 +2,8 @@
 #include <stdlib.h>
 #include <locale.h>
 
-int counter(int x){
-    unsigned long answer = 0;
+int counter(long x){
+    long answer = 0;
     while (x != 0){
         answer += x % 10;
         x /= 10;
@@ -12,7 +12,7 @@ int counter(int x){
 }
 
 int main(){
-    int number = 0;
+    long number = 0;
     setlocale(LC_ALL, "Russian");
     printf("Введите число для подсчёта суммы цифр: ");
     scanf("%d", &number);
