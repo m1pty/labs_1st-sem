@@ -16,7 +16,7 @@ int main(){
     setlocale(LC_ALL, "Russian");
     printf("Введите число для подсчёта суммы цифр: ");
     scanf("%d", &number);
-    number = counter(number);
+    number = counter(abs(number));
     printf("Результат: %d\n", number);
     return 0;
 }
